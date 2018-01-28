@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/bookstore.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="text/css" href="fontawesome-all.css">
+</head>
+<body>
+    <header id="header">
+        <div class="top-banner">
+            <a href="#"><img src="img/banner.jpg" alt="banner"></a>
+        </div>
+        <div class="header-container">
+            <div class="header-main">
+                <div class="col-2">
+                    <a href="bookstore.html"><img src="img/bookstoreicon.png" alt="bookstoreicon"></a>
+                </div>
+                <div class="col-6">
+                    <form class="search-form">
+                        <input type="text" id="search" name="search" placeholder="Nhập tên sản phẩm bạn muốn tìm kiếm...">
+                        <button type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>                            
+                        </button>
+                    </form>
+                </div>
+                <nav class="col-4">
+                    <ul class="menu">
+                        <li>
+                           <a href="login.html">
+                                <i class="fa fa-sign-in-alt" aria-hidden="true"></i>
+                                <span>Đăng Nhập</span>
+                            </a> 
+                        </li>
+                        <li>
+                            <a href="register.html">
+                                <i class="far fa-registered"></i>                                    
+                                <span>Đăng Ký</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!--end header main-->
+            <div id="sticky-menu" class="header-list">
+                <div class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#" id="menu-toggle" class="navbar-item">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                <!-- <h4>Danh Mục Sách</h4> -->
+                                <span>Danh Mục Sách</span>
+                            </a>
+                            
+                            
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-item">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    <span>Giỏ Hàng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-item">
+                                <i class="fas fa-phone"></i>
+                                <span>Liên Hệ</span>
+                            </a>
+                           
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-item">
+                                <i class="fas fa-eye"></i> 
+                                <span>Theo Dõi Đơn Hàng</span> 
+                            </a>                     
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header><!--end header-->
+
+    <section class="container">
+        <div class="table-bar">
+            <ul>
+                <li class="title">
+                    <i class="fas fa-caret-right"></i>                        
+                    Ngoại Văn
+                </li>
+                <li class="table-bar-item">
+                    <a href="#">Romance</a>
+                </li>
+                <li class="table-bar-item">
+                    <a href="#">Science Fiction</a>
+                </li>
+                <li class="table-bar-item">
+                    <a href="#"> History</a>
+                </li>
+                <li class="table-bar-item">
+                    <a href="#">Poetry</a>
+                </li>
+            </ul>
+            <ul>
+                    <li class="title">
+                        <i class="fas fa-caret-right"></i>   
+                        Văn Học Trong Nước
+                    </li>
+                    <li class="table-bar-item">
+                        <a href="#">Truyện Ngắn Tản Văn</a>
+                    </li>
+                    <li class="table-bar-item">
+                        <a href="#">Tiểu Thuyết Lãng Mạn</a>
+                    </li>
+                    <li class="table-bar-item">
+                        <a href="#">Truyện Lịch Sử</a>
+                    </li>
+                    <li class="table-bar-item">
+                        <a href="#">Truyện & Thơ Ca Dân Gian</a>
+                    </li>
+            </ul>
+            <ul>
+                    <li class="title">
+                        <i class="fas fa-caret-right"></i>  
+                        Kinh Tế
+                    </li>
+                    <li class="table-bar-item">
+                       <a href="#">Quản trị & Lãnh Đạo</a>
+                    </li>
+                    <li class="table-bar-item">
+                        <a href="#">Tài Chính & Tiền Tệ</a>
+                    </li>
+                    <li class="table-bar-item">
+                       <a href="#">Văn Bản Luật</a>
+                    </li>
+                    <li class="table-bar-item">
+                        <a href="#">Đầu Tư Chứng Khoán</a>
+                    </li>
+                </ul>
+                <ul>
+                        <li class="title">
+                            <i class="fas fa-caret-right"></i>     
+                            Thường Thức Đời Sống 
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Bí Quyết Làm Đẹp</a>
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Hạnh Phúc Gia Đình</a>
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Nữ Công Gia Chánh</a>
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Nuôi Dạy Con</a>
+                        </li>
+                </ul>
+                <ul>
+                        <li class="title">
+                            <i class="fas fa-caret-right"></i>
+                            Thiếu Nhi
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Khoa Học Tự Nhiên</a>
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Khoa Học Xã Hội</a>
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Mĩ Thuật & Âm Nhạc</a>
+                        </li>
+                        <li class="table-bar-item">
+                            <a href="#">Truyện Tranh</a>
+                        </li>
+                </ul> 
+        </div><!--end top bar-->
+
+        <div class="main">
+                <div class="card">
+                    <div class="slideshow-container">
+                        <!--slideshow full -->
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s2.jpg" alt="slide1" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s1.jpg" alt="slide2" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s3.jpg" alt="slide3" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s4.jpg" alt="slide4" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s5.jpg" alt="slide1" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s6.jpg" alt="slide1" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s7.jpg" alt="slide1" >
+                        </div>
+                        <div class="slide fade" data-ride="carousel">
+                            <img src="img/slider/s8.png" alt="slide1" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 left">
+                    <div class="book-card">
+                        <div class="book-card-header">
+                            <h3>TOP Sách Bán Chạy 2017</h3>
+                        </div>
+                        <div class="book-card-body">
+                            <div class="row">
+                                <div class="book-card book-card-item">
+                                    <a href="bookDetail.html"><img src="img/28.jpg" alt=""></a>
+                                    <div class=" book-card-item-info">
+                                        <a href="bookDetail.html"><div class="item-name">5cm/s</div></a>
+                                        <div class="item-author">Shinmai Makoto</div>
+                                        <span class="item-saleprice">69.000đ</span>
+                                        <span class="item-realprice">89.000đ</span>
+                                        <span class="item-saleper">-20%</span>                                        
+                                    </div>
+                                </div>
+                                <div class="book-card book-card-item">
+                                        <img src="img/2.jpg" alt="">
+                                        <div class=" book-card-item-info">
+                                            <div class="item-name">Tuổi trẻ đáng giá bao nhiêu</div>
+                                            <div class="item-author">Rosie Nguyễn</div>
+                                            <span class="item-saleprice">56.000đ</span>
+                                            <span class="item-realprice">70.000đ</span>
+                                            <span class="item-saleper">-20%</span>                                        
+                                        </div>
+                                </div>
+                                <div class="book-card book-card-item">
+                                        <img src="img/5.jpg" alt="">
+                                        <div class=" book-card-item-info">
+                                            <div class="item-name">Đi tìm lẽ sống</div>
+                                            <div class="item-author">Viktor E.Frankl</div>
+                                            <span class="item-saleprice">41.000đ</span>
+                                            <span class="item-realprice">68.000đ</span>
+                                            <span class="item-saleper">-40%</span>                                        
+                                        </div>
+                                </div>
+                                <div class="book-card book-card-item">
+                                        <img src="img/8.jpg" alt="">
+                                        <div class=" book-card-item-info">
+                                            <div class="item-name">Lối sống tối giản của người nhật</div>
+                                            <div class="item-author">Sasaki Fumio</div>
+                                            <span class="item-saleprice">68.000đ</span>
+                                            <span class="item-realprice">85.000đ</span>
+                                            <span class="item-saleper">-20%</span>                                        
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                            <div class="book-card-header">
+                                <h3>Sách đặt trước-Ưu đãi hơn</h3>
+                            </div>
+                            <div class="book-card-body">
+                                <div class="row">
+                                    <div class="book-card book-card-item">
+                                        <img src="img/99.jpg" alt="">
+                                        <div class=" book-card-item-info">
+                                            <div class="item-name">Sống hết mình cho ngày hôm nay</div>
+                                            <div class="item-author">Taketoshi Ozawa</div>
+                                            <span class="item-saleprice">61.000đ</span>
+                                            <span class="item-realprice">76.000đ</span>
+                                            <span class="item-saleper">-20%</span>                                        
+                                        </div>
+                                    </div>
+                                    <div class="book-card book-card-item">
+                                            <img src="img/98.jpg" alt="">
+                                            <div class=" book-card-item-info">
+                                                <div class="item-name">Mandarin của tôi</div>
+                                                <div class="item-author">Mặc Bao Phi Bảo</div>
+                                                <span class="item-saleprice">92.000đ</span>
+                                                <span class="item-realprice">115.000đ</span>
+                                                <span class="item-saleper">-20%</span>                                        
+                                            </div>
+                                        </div>
+                                        <div class="book-card book-card-item">
+                                                <img src="img/97.jpg" alt="">
+                                                <div class=" book-card-item-info">
+                                                    <div class="item-name">Tại sao em ít nói thế</div>
+                                                    <div class="item-author">Huy Đức</div>
+                                                    <span class="item-saleprice">77.000đ</span>
+                                                    <span class="item-realprice">96.000đ</span>
+                                                    <span class="item-saleper">-20%</span>                                        
+                                                </div>
+                                            </div>
+                                            <div class="book-card book-card-item">
+                                                    <img src="img/96.jpg" alt="">
+                                                    <div class=" book-card-item-info">
+                                                        <div class="item-name">GOT7</div>
+                                                        <div class="item-author">Nhiều tác giả</div>
+                                                        <span class="item-saleprice">60.000đ</span>
+                                                        <span class="item-realprice">75.000đ</span>
+                                                        <span class="item-saleper">-20%</span>                                        
+                                                    </div>
+                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card">
+                                <div class="book-card-header">
+                                    <h3>Sách văn học mới phát hành</h3>
+                                </div>
+                                <div class="book-card-body">
+                                    <div class="row">
+                                        <div class="book-card book-card-item">
+                                            <img src="img/95.jpg" alt="">
+                                            <div class=" book-card-item-info">
+                                                <div class="item-name">Bài hát tuổi 17</div>
+                                                <div class="item-author">Saika Kikuko</div>
+                                                <span class="item-saleprice">75.000đ</span>
+                                                <span class="item-realprice">94.000đ</span>
+                                                <span class="item-saleper">-20%</span>                                        
+                                            </div>
+                                        </div>
+                                        <div class="book-card book-card-item">
+                                                <img src="img/94.jpg" alt="">
+                                                <div class=" book-card-item-info">
+                                                    <div class="item-name">Người mẹ lang thang</div>
+                                                    <div class="item-author">Hika Harada</div>
+                                                    <span class="item-saleprice">78.000đ</span>
+                                                    <span class="item-realprice">98.000đ</span>
+                                                    <span class="item-saleper">-20%</span>                                        
+                                                </div>
+                                            </div>
+                                            <div class="book-card book-card-item">
+                                                    <img src="img/93.jpg" alt="">
+                                                    <div class=" book-card-item-info">
+                                                        <div class="item-name">Nghiệp ác</div>
+                                                        <div class="item-author">Robert Gallbraith</div>
+                                                        <span class="item-saleprice">168.000đ</span>
+                                                        <span class="item-realprice">210.000đ</span>
+                                                        <span class="item-saleper">-20%</span>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="book-card book-card-item">
+                                                        <img src="img/92.jpg" alt="">
+                                                        <div class=" book-card-item-info">
+                                                            <div class="item-name">Án mạng đêm giáng sinh</div>
+                                                            <div class="item-author">Agatha Christie</div>
+                                                            <span class="item-saleprice">88.000đ</span>
+                                                            <span class="item-realprice">110.000đ</span>
+                                                            <span class="item-saleper">-20%</span>                                        
+                                                        </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-card">
+                                    <div class="book-card-header">
+                                        <h3>Sách kinh tế mới phát hành</h3>
+                                    </div>
+                                    <div class="book-card-body">
+                                        <div class="row">
+                                            <div class="book-card book-card-item">
+                                                <img src="img/91.jpg" alt="">
+                                                <div class=" book-card-item-info">
+                                                    <div class="item-name">Nhấn nút tái tạo</div>
+                                                    <div class="item-author">Satya Nadella</div>
+                                                    <span class="item-saleprice">90.000đ</span>
+                                                    <span class="item-realprice">113.000đ</span>
+                                                    <span class="item-saleper">-20%</span>                                        
+                                                </div>
+                                            </div>
+                                            <div class="book-card book-card-item">
+                                                    <img src="img/90.jpg" alt="">
+                                                    <div class=" book-card-item-info">
+                                                        <div class="item-name">The rich emplyoee</div>
+                                                        <div class="item-author">James Altuchers</div>
+                                                        <span class="item-saleprice">70.000đ</span>
+                                                        <span class="item-realprice">99.000đ</span>
+                                                        <span class="item-saleper">-29%</span>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="book-card book-card-item">
+                                                        <img src="img/89.jpg" alt="">
+                                                        <div class=" book-card-item-info">
+                                                            <div class="item-name">9 nghề cho chín</div>
+                                                            <div class="item-author">Tuyết Hường</div>
+                                                            <span class="item-saleprice">44.000đ</span>
+                                                            <span class="item-realprice">55.000đ</span>
+                                                            <span class="item-saleper">-20%</span>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="book-card book-card-item">
+                                                            <img src="img/88.jpg" alt="">
+                                                            <div class=" book-card-item-info">
+                                                                <div class="item-name">Nghĩ kiểu Zuck</div>
+                                                                <div class="item-author">Ekateria Walter</div>
+                                                                <span class="item-saleprice">66.000đ</span>
+                                                                <span class="item-realprice">82.000đ</span>
+                                                                <span class="item-saleper">-20%</span>                                        
+                                                            </div>
+                                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-card">
+                                    <div class="book-card-header">
+                                        <h3>Sách nuôi dạy trẻ hay</h3>
+                                    </div>
+                                    <div class="book-card-body">
+                                        <div class="row">
+                                            <div class="book-card book-card-item">
+                                                <img src="img/87.jpg" alt="">
+                                                <div class=" book-card-item-info">
+                                                    <div class="item-name">Dạy con trong hoang mang</div>
+                                                    <div class="item-author">Lê Nguyên Phương</div>
+                                                    <span class="item-saleprice">101.000đ</span>
+                                                    <span class="item-realprice">126.000đ</span>
+                                                    <span class="item-saleper">-20%</span>                                        
+                                                </div>
+                                            </div>
+                                            <div class="book-card book-card-item">
+                                                    <img src="img/86.jpg" alt="">
+                                                    <div class=" book-card-item-info">
+                                                        <div class="item-name">Chậm lại cùng con</div>
+                                                        <div class="item-author">Nhiêu Tuyết Lị</div>
+                                                        <span class="item-saleprice">68.000đ</span>
+                                                        <span class="item-realprice">85.000đ</span>
+                                                        <span class="item-saleper">-20%</span>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="book-card book-card-item">
+                                                        <img src="img/85.jpg" alt="">
+                                                        <div class=" book-card-item-info">
+                                                            <div class="item-name">Ván cờ cuộc đời</div>
+                                                            <div class="item-author">Nguyễn Hữu Huấn</div>
+                                                            <span class="item-saleprice">63.000đ</span>
+                                                            <span class="item-realprice">89.000đ</span>
+                                                            <span class="item-saleper">-29%</span>                                        
+                                                        </div>
+                                                    </div>
+                                                    <div class="book-card book-card-item">
+                                                            <img src="img/84.jpg" alt="">
+                                                            <div class=" book-card-item-info">
+                                                                <div class="item-name">Vô cùng tàn nhẫn</div>
+                                                                <div class="item-author">Sara Imas</div>
+                                                                <span class="item-saleprice">91.000đ</span>
+                                                                <span class="item-realprice">129.000đ</span>
+                                                                <span class="item-saleper">-29%</span>                                        
+                                                            </div>
+                                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-card">
+                                    <div class="book-card-header">
+                                        <h3>Sách thiếu nhi mới phát hành</h3>
+                                    </div>
+                                    <div class="book-card-body">
+                                        <div class="row">
+                                            <div class="book-card book-card-item">
+                                                <img src="img/83.jpg" alt="">
+                                                <div class=" book-card-item-info">
+                                                    <div class="item-name">Book Song ngữ</div>
+                                                    <div class="item-author">Nhiều tác giả</div>
+                                                    <span class="item-saleprice">95.000đ</span>
+                                                    <span class="item-realprice">127.000đ</span>
+                                                    <span class="item-saleper">-25%</span>                                        
+                                                </div>
+                                            </div>
+                                            <div class="book-card book-card-item">
+                                                    <img src="img/82.jpg" alt="">
+                                                    <div class=" book-card-item-info">
+                                                        <div class="item-name">Oliver phiêu lưu ký</div>
+                                                        <div class="item-author">Sarah Mcintyre</div>
+                                                        <span class="item-saleprice">53.000đ</span>
+                                                        <span class="item-realprice">66.000đ</span>
+                                                        <span class="item-saleper">-20%</span>                                        
+                                                    </div>
+                                                </div>
+                                                <div class="book-card book-card-item">
+                                                        <img src="img/81.jpg" alt="">
+                                                        <div class=" book-card-item-info">
+                                                            <div class="item-name">Chú Thòong</div>
+                                                            <div class="item-author">Vương Trạch</div>
+                                                            <span class="item-saleprice">15.000đ</span>
+                                                                                                    
+                                                        </div>
+                                                    </div>
+                                                    <div class="book-card book-card-item">
+                                                            <img src="img/80.jpg" alt="">
+                                                            <div class=" book-card-item-info">
+                                                                <div class="item-name">Nhà có cô con gái</div>
+                                                                <div class="item-author">Tô Ngưng</div>
+                                                                <span class="item-saleprice">55.000đ</span>
+                                                                                                    
+                                                            </div>
+                                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>            
+                </div>
+                <div class="col-3 row right">
+                    <div class="book-card">
+                        <div class="book-card-header">
+                            <h4>Sách Bán Chạy Trong Tuần</h4>
+                        </div>
+                        <div class="book-card-body">
+                            <div class="book-card book-card-item-right">
+                                <img src="img/100.jpg" alt="">
+                                <div class=" book-card-item-info-right">
+                                    <div class="item-name-right">Gọi em bằng tên anh</div>
+                                    <div class="item-author-right">André Aciman</div>
+                                    <span class="item-saleprice">78.000đ</span>
+                                    <span class="item-realprice">98.000đ</span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-card-body">
+                                <div class="book-card book-card-item-right">
+                                    <img src="img/101.jpg" alt="">
+                                    <div class=" book-card-item-info-right">
+                                        <div class="item-name-right">Đọc vị bất kì ai</div>
+                                        <div class="item-author-right">David J.Lieberman</div>
+                                        <span class="item-saleprice">48.000đ</span>
+                                        <span class="item-realprice">60.000đ</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-card-body">
+                                    <div class="book-card book-card-item-right">
+                                        <img src="img/102.jpg" alt="">
+                                        <div class=" book-card-item-info-right">
+                                            <div class="item-name-right">Sức mạnh tiềm thức</div>
+                                            <div class="item-author-right">Joseph Murphy</div>
+                                            <span class="item-saleprice">77.000đ</span>
+                                            <span class="item-realprice">96.000đ</span> 
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="book-card-body">
+                                    <div class="book-card book-card-item-right">
+                                        <img src="img/97.jpg" alt="">
+                                        <div class=" book-card-item-info-right">
+                                            <div class="item-name-right">Tại sao em nói ít thế</div>
+                                            <div class="item-author-right">Huy Đức</div>
+                                            <span class="item-saleprice">77.000đ</span>
+                                            <span class="item-realprice">96.000đ</span> 
+                                        </div>        
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="book-card">
+                            <div class="book-card-header">
+                                <h4>Sách Báo Chí Giới Thiệu</h4>
+                            </div>
+                            <div class="book-card-body">
+                                <div class="book-card book-card-item-right">
+                                    <img src="img/28.jpg" alt="">
+                                    <div class=" book-card-item-info-right">
+                                        <div class="item-name-right">5cm/s</div>
+                                        <div class="item-author-right">Shinmai Makoto</div>
+                                        <span class="item-saleprice">69.000đ</span>
+                                        <span class="item-realprice">89.000đ</span> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="book-card-body">
+                                    <div class="book-card book-card-item-right">
+                                        <img src="img/28.jpg" alt="">
+                                        <div class=" book-card-item-info-right">
+                                            <div class="item-name-right">5cm/s</div>
+                                            <div class="item-author-right">Shinmai Makoto</div>
+                                            <span class="item-saleprice">69.000đ</span>
+                                            <span class="item-realprice">89.000đ</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-card-body">
+                                        <div class="book-card book-card-item-right">
+                                            <img src="img/28.jpg" alt="">
+                                            <div class=" book-card-item-info-right">
+                                                <div class="item-name-right">5cm/s</div>
+                                                <div class="item-author-right">Shinmai Makoto</div>
+                                                <span class="item-saleprice">69.000đ</span>
+                                                <span class="item-realprice">89.000đ</span> 
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="book-card-body">
+                                        <div class="book-card book-card-item-right">
+                                            <img src="img/28.jpg" alt="">
+                                            <div class=" book-card-item-info-right">
+                                                <div class="item-name-right">5cm/s</div>
+                                                <div class="item-author-right">Shinmai Makoto</div>
+                                                <span class="item-saleprice">69.000đ</span>
+                                                <span class="item-realprice">89.000đ</span> 
+                                            </div>        
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="book-card">
+                                <div class="book-card-header">
+                                    <h4>Sách Mới Nhập Về</h4>
+                                </div>
+                                <div class="book-card-body">
+                                    <div class="book-card book-card-item-right">
+                                        <img src="img/200.jpg" alt="">
+                                        <div class=" book-card-item-info-right">
+                                            <div class="item-name-right">Đàn bà hư ảo</div>
+                                            <div class="item-author-right">Nguyễn Khắc Ngân Vi</div>
+                                            <span class="item-saleprice">54.000đ</span>
+                                            <span class="item-realprice">68.000đ</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="book-card-body">
+                                        <div class="book-card book-card-item-right">
+                                            <img src="img/201.jpg" alt="">
+                                            <div class=" book-card-item-info-right">
+                                                <div class="item-name-right">Bơ đi mà sống</div>
+                                                <div class="item-author-right">Mèo Xù</div>
+                                                <span class="item-saleprice">60.000đ</span>
+                                                <span class="item-realprice">75.000đ</span> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="book-card-body">
+                                            <div class="book-card book-card-item-right">
+                                                <img src="img/202.jpg" alt="">
+                                                <div class=" book-card-item-info-right">
+                                                    <div class="item-name-right">Bông bờm bách</div>
+                                                    <div class="item-author-right">Trần Lực</div>
+                                                    <span class="item-saleprice">71.000đ</span>
+                                                    <span class="item-realprice">89.000đ</span> 
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="book-card-body">
+                                            <div class="book-card book-card-item-right">
+                                                <img src="img/203.jpg" alt="">
+                                                <div class=" book-card-item-info-right">
+                                                    <div class="item-name-right">Mùa hè năm ấy</div>
+                                                    <div class="item-author-right">Đặng Huỳnh Mai Anh</div>
+                                                    <span class="item-saleprice">46.000đ</span>
+                                                    <span class="item-realprice">58.000đ</span> 
+                                                </div>        
+                                            </div>
+                                    </div>
+                                    <div class="book-card-body">
+                                            <div class="book-card book-card-item-right">
+                                                <img src="img/204.jpg" alt="">
+                                                <div class=" book-card-item-info-right">
+                                                    <div class="item-name-right">Một nghệ thuật sống</div>
+                                                    <div class="item-author-right">Nguyễn Duy Cần</div>
+                                                    <span class="item-saleprice">38.000đ</span>
+                                                    <span class="item-realprice">45.000đ</span> 
+                                                </div>        
+                                            </div>
+                                    </div>
+                            </div>
+                </div>
+                       
+        
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="col-4">
+                    <ul>
+                            <li class="footer-title">
+                                Bookstore
+                            </li>
+                            <li class="table-bar-item">
+                                    <i class="fas fa-map-marker"></i>                                    
+                                Địa chỉ: kp3-Phường An Bình-Thành Phố Biên Hòa-Tỉnh Đồng Nai
+                            </li>
+                            <li class="table-bar-item">
+                                <i class="fas fa-envelope"></i>                                    
+                                Email:hotrokhachhang@gmail.com
+                            </li>
+                            <li class="table-bar-item">
+                                <i class="fas fa-phone"></i>                                    
+                               SĐT: 0123456789
+                            </li>
+                            
+                    </ul> 
+            </div>
+            <div class="col-4">
+                <h3>About Company</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Praesent ultrices at massa nec imperdiet. Ut tempor augue tincidunt odio luctus, 
+                    non tempor sem cursus. Proin.</p>
+                    <div class="social-item">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-square"></i> </a>                                  
+                    </div>                                                     
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/bookstore.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</body>
+</html>
+ 
